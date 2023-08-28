@@ -6,7 +6,7 @@ function consultaEndereco(){
         return;
     }
 
-    let url = `https://viacep.com.br/ws/${cep}/json/`;
+    let url = `http://localhost:8080/https://viacep.com.br/ws/${cep}/json/`;
 
     fetch(url).then(function(response){
         response.json().then(mostrarEndereco);
